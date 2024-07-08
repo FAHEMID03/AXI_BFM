@@ -1,3 +1,14 @@
+
+//                              -*- Mode: system Verilog -*-
+// Filename        : axi_if.sv
+// Description     : AXI IF
+// Author          : SK ABDUL FAHEMID
+// Created On      : Mon July 08 17:40:49 2024
+// Last Modified By: SK ABDUL FAHEMID
+// Last Modified On: Mon July 08 17:40:49 2024
+// Update Count    : 0
+// Status          : Unknown, Use with caution!
+
 ///////////////////axi_if.sv///////////
 `define ADDR_WIDTH 32
 `define DATA_WIDTH 32
@@ -8,7 +19,8 @@ interface axi_if(input bit Aclock, bit Aresetn);
 
                 //write address/control channel
                 logic [3:0]awid;
-                logic [`ADDR_WIDTH-1:0]awaddr;
+                logic
+  [`ADDR_WIDTH-1:0]awaddr;
                 logic [`LENGTH-1:0]awlen;
                 logic [2:0]awsize;
                 logic [1:0]awburst;
